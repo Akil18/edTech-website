@@ -6,6 +6,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.footer-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.bg-color {
+  background-color: #242424;
+}
+
 @media only screen and (max-width: 576px) {
   .carousel-caption h1 {
     font-size: 20px;
