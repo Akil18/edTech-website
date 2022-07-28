@@ -18,9 +18,11 @@
         <!-- nav section -->
         <nav class="navbar navbar-expand-lg bg-white p-4">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand fw-bold" href="#">Learn ED</a>
+                <a class="navbar-brand fw-bold fs-2" href="#">Learn ED</a>
                 <div class="d-flex gap-3 flex-lg-row-reverse">
-                    <button class="btn btn-primary rounded d-none d-sm-block">Register</button>
+                    <button class="btn btn-primary rounded d-none d-sm-block">
+                        <a class="text-decoration-none text-white" href="#register">Register</a>
+                    </button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -30,13 +32,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#courses">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Details</a>
+                            <a class="nav-link" href="#faq">FAQs</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Success</a>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#success">Success</a>
                         </li>
                         </ul>
                     </div>
@@ -51,7 +53,7 @@
                   <div class="carousel-item active">
                     <img src="images/cover/cover-1.png" class="d-block w-100 opacity-50" alt="...">
                     <div class=" carousel-caption text-white p-2 mb-md-5 pb-lg-5">
-                        <h1 class="fw-bold">Learn online from anywhere</h1>
+                        <h1 class="fw-semibold">Learn online from anywhere</h1>
                         <p>
                             It is easier to learn anything now and we are providing you with courses which you can access from anywhere.
                         </p>
@@ -92,10 +94,11 @@
     </header>
 
     <!-- main section -->
-    <main class="my-5">
+    <main class="mt-5">
+        <!-- container part -->
         <div class="container">
             <!-- courses section -->
-            <section class="courses my-5">
+            <section id="courses" class="courses my-5 pt-5">
                 <div class="courses-heading my-lg-5 text-center">
                     <h1 class="fw-semibold">Discover Our Courses</h1>
                     <p>Choose according to your requirement from the courses listed below which have been catered to fulfil your needs</p>
@@ -108,7 +111,9 @@
                             <img src="images/course/course-1.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Fundamental Of UI/UX Design</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                         </div>
@@ -119,7 +124,9 @@
                             <img src="images/course/course-2.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Javascript Basic to advanced</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                     </div>
@@ -130,7 +137,9 @@
                             <img src="images/course/course-3.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Fullstack Web Development</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                         </div>
@@ -141,7 +150,9 @@
                             <img src="images/course/course-4.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Digital Marketing</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                         </div>
@@ -152,7 +163,9 @@
                             <img src="images/course/course-5.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Photography Basic Rules</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                         </div>
@@ -163,7 +176,9 @@
                             <img src="images/course/course-6.png" alt="" class="img-fluid course-img">
                             <div class="px-4">
                                 <h5 class="fw-bolder">Motion Graphics</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illo!</p>
+                                <p>
+                                    Join the course today. The price is valid for a very short period of time. Hurry up!
+                                </p>
                                 <h6 class="text-primary fw-semibold">Price: $20</h6>
                             </div>
                         </div>
@@ -174,9 +189,48 @@
                     <button class="btn btn-primary rounded">See More Courses</button>
                 </div>
             </section>
+
+            <!-- bonus section - ready to join -->
+            <section id="register" class="register my-5 pt-5">
+                <div class="p-5 text-white rounded text-center text-lg-start bg-primary d-lg-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 class="fw-semibold">Ready to join?</h2>
+                        <p>
+                            If you are interested in our newsletters please click the register button and complete your registration with your email id.
+                        </p>
+                    </div>
+    
+                    <div>
+                        <button type="button" class="btn btn-light text-primary px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Register Now</button>
+                    </div>
+    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Email address:</label>
+                                <input type="email" class="form-control" id="recipient-name">
+                            </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Register</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
     
             <!-- FAQ section -->
-            <section class="faq my-5">
+            <section id="faq" class="faq my-5 pt-5">
                 <div class="faq-heading my-lg-5 text-center">
                     <h1 class="fw-semibold">Frequently Asked Questions</h1>
                     <p>Following questions were asked to answer for bonus marks. Hence, an explanation has been given to each question.</p>
@@ -242,12 +296,27 @@
                     </div>
                 </div>
             </section>
+
+            <!-- bonus section - trusted companies -->
+            <section id="success" class="trusted-companies d-none d-lg-block my-5 py-5">
+                <div class="text-center mb-4">
+                    <h2 class="fw-semibold">Trusted by over 800+ companies</h2>
+                </div>
+                <div class="d-lg-flex justify-content-around align-items-center">
+                    <div><img src="images/company/company-1.png" alt=""></div>
+                    <div><img src="images/company/company-2.png" alt=""></div>
+                    <div><img src="images/company/company-3.png" alt=""></div>
+                    <div><img src="images/company/company-4.png" alt=""></div>
+                    <div><img src="images/company/company-5.png" alt=""></div>
+                    <div><img src="images/company/company-6.png" alt=""></div>
+                </div>
+            </section>
         </div>
 
         <!-- footer section -->
         <footer class="py-5 bg-black text-center text-white">
             <div>
-                <h1 class="fw-semibold">Learn ED</h1>
+                <a class="fs-1 fw-semibold text-decoration-none text-white" href="#">Learn ED</a>
             </div>
             <div class="footer-info">
                 <address>
